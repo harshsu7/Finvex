@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finvex - Upload Bank Statement</title>
+    <style>
+        body { background-color: white; font-family: Arial, sans-serif; }
+        header { background-color: blue; padding: 10px; color: white; text-align: center; font-size: 24px; }
+        .content { margin: 20px; text-align: center; }
+        .button { background-color: green; color: white; font-weight: bold; padding: 10px 20px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>Finvex</header>
+    <div class="content">
+        <h2>Upload your Bank Statement (PDF)</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="statement" required>
+            <button type="submit" class="button">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
